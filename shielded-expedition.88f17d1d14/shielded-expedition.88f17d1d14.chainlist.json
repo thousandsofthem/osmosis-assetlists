@@ -1,0 +1,64 @@
+{
+  "zone": "osmosistestnet",
+  "chains": [
+    {
+      "chain_name": "namadatestnet",
+      "status": "live",
+      "network_type": "testnet",
+      "pretty_name": "Namada Chain",
+      "chain_id": "shielded-expedition.88f17d1d14",
+      "bech32_prefix": "osmo",
+      "bech32_config": {
+        "bech32PrefixAccAddr": "osmo",
+        "bech32PrefixAccPub": "osmopub",
+        "bech32PrefixValAddr": "osmovaloper",
+        "bech32PrefixValPub": "osmovaloperpub",
+        "bech32PrefixConsAddr": "osmovalcons",
+        "bech32PrefixConsPub": "osmovalconspub"
+      },
+      "slip44": 118,
+      "fees": {
+        "fee_tokens": [
+          {
+            "denom": "uosmo",
+            "fixed_min_gas_price": 0,
+            "low_gas_price": 0.0025,
+            "average_gas_price": 0.025,
+            "high_gas_price": 0.04
+          }
+        ]
+      },
+      "staking": {
+        "staking_tokens": [
+          {
+            "denom": "uosmo"
+          }
+        ]
+      },
+      "apis": {
+        "rpc": [
+          {
+            "address": "https://proxy.heliax.click/shielded-expedition.88f17d1d14/"
+          }
+        ],
+        "rest": [
+          {
+            "address": "https://proxy.heliax.click/shielded-expedition.88f17d1d14/"
+          }
+        ]
+      },
+      "explorers": [
+        {
+          "tx_page": "https://testnet.mintscan.io/osmosis-testnet/txs/${txHash}"
+        }
+      ],
+      "features": [
+        "ibc-go",
+        "ibc-transfer",
+        "cosmwasm",
+        "wasmd_0.24+",
+        "osmosis-txfees"
+      ]
+    }
+  ]
+}
